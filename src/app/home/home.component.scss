@@ -1,0 +1,31 @@
+.mute-sound{
+  position: fixed;
+  z-index: 998;
+  left: 35px;
+  top: 35px;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.fixed-action-btn {
+  position: fixed;
+  z-index: 998;
+  right: 35px;
+  bottom: 35px;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+
+  i{
+    font-size:30px;
+  }
+}
+
+.form-add{
+  margin: 10px;
+
+  label.color-label, p.color-label{
+    color: #dd2c00;
+    font-weight: bold;
+  }
+}

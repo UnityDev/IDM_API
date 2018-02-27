@@ -1,0 +1,79 @@
+<!--Carousel Wrapper-->
+<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-slide>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="/assets/video/1.mp4" type="video/mp4" />
+    </video>
+  </mdb-slide>
+  <mdb-slide>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="/assets/video/2.mp4" type="video/mp4" />
+    </video>
+  </mdb-slide>
+  <mdb-slide>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="/assets/video/3.mp4" type="video/mp4" />
+    </video>
+  </mdb-slide>
+  <mdb-slide>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="/assets/video/4.mp4" type="video/mp4" />
+    </video>
+  </mdb-slide>
+</mdb-carousel>
+<!--Carousel Wrapper-->
+<!--Panel-->
+<div class="card mute-sound">
+  <div class="card-header deep-orange lighten-1 white-text">
+    <strong>Bienvenue sur notre générateur de vidéo</strong>
+  </div>
+  <div class="card-body">
+    <p class="card-text">Je vous conseille vivement de couper votre son au plus vite, vous pouvez devenir fou en <strong>7 minutes et 38 secondes . </strong></p>
+  </div>
+</div>
+<!--/.Panel-->
+
+<button type="button" class="fixed-action-btn btn btn-deep-orange waves-light" (click)="form.show()" mdbRippleRadius><i class="fa fa-plus"></i></button>
+<!--Modal: Contact form-->
+<div mdbModal #form="mdb-modal" class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <form class="modal-content">
+      <!--Header-->
+      <div class="modal-header deep-orange darken-3 white-text">
+        <h4 class="title"><i class="fa fa-film"></i>Ajouter une variante</h4>
+        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close" (click)="form.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="form-add">
+        <div class="form-group">
+          <p class="color-label">Vidéo obligatoire:</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" disabled checked value="option1"> Flute MAN
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="color-label" for="exampleFormControlSelect1">Vidéos alternatives:</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Cool 3D World</option>
+            <option>Guinea Pig</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="color-label">Vidéos optionnels:</p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Live Peace
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--/.Content-->
+</div>
+<!--Modal: Contact form-->
