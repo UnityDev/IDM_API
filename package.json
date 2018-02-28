@@ -20,6 +20,7 @@
     "@angular/cdk": "^5.2.3",
     "@angular/cli": "^1.6.0",
     "@angular/common": "^5.1.0",
+    "@angular/animations": "^4.0.0",
     "@angular/compiler": "^5.1.0",
     "@angular/compiler-cli": "^5.1.0",
     "@angular/core": "^5.1.0",
