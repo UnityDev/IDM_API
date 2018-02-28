@@ -7,7 +7,9 @@ import { MDBBootstrapModule } from './typescripts/free';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
+import { HomeService } from './home/home.service';
 import {MatSelectModule} from '@angular/material/select';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -19,11 +21,12 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatSelectModule,
     MDBBootstrapModule.forRoot(),
     HttpModule,
   ],
-  providers: [],
+  providers: [HomeService, HttpClient],
   bootstrap: [AppComponent],
   schemas:      [ NO_ERRORS_SCHEMA ]
 })

@@ -45,6 +45,7 @@ const user = {
 };
 
 userRouter.get("/", (request: Request, response: Response) => {
+  console.log("bite");
   test();
   response.json(user);
 });
