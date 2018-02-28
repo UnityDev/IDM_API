@@ -2,6 +2,24 @@ import { Request, Response, Router } from "express";
 
 const userRouter: Router = Router();
 
+function test() {
+  var exec = require('child_process').exec;
+  var child = exec('java -jar idm_tp_jar.jar vignette',
+    function (error, stdout, stderr){
+      console.log('Output -> ' + stdout);
+      if(error !== null){
+        console.log("Error -> "+error);
+      }
+  });
+  var child = exec('java -jar idm_tp_jar.jar variante',
+    function (error, stdout, stderr){
+      console.log('Output -> ' + stdout);
+      if(error !== null){
+        console.log("Error -> "+error);
+      }
+  });
+}
+
 const user = {
   address: {
     city: "Gwenborough",
@@ -27,7 +45,7 @@ const user = {
 };
 
 userRouter.get("/", (request: Request, response: Response) => {
-
+  test();
   response.json(user);
 });
 

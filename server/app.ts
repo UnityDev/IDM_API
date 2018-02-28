@@ -15,7 +15,7 @@ app.use(compression());
 app.use(urlencoded({ extended: true }));
 
 // api routes
-app.use("/api/video", protectedRouter);
+app.use("/api/video", userRouter);
 
 // catch 404 and forward to error handler
 app.use((req: express.Request, res: express.Response, next) => {
