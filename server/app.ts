@@ -9,13 +9,17 @@ import { userRouter } from "./routes/video";
 const app: express.Application = express();
 
 app.disable("x-powered-by");
-
+s
 app.use(json());
 app.use(compression());
 app.use(urlencoded({ extended: true }));
 
 // api routes
 app.use("/api/video", userRouter);
+
+app.route("/api/video").get((req, res) => {
+  res.send(200);
+});
 
 // catch 404 and forward to error handler
 app.use((req: express.Request, res: express.Response, next) => {

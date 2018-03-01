@@ -10,7 +10,14 @@ export class HomeComponent implements OnInit {
   constructor(private homeservice: HomeService) { }
 
   ngOnInit() {
+    this.createVideoRandom();
+  }
+
+  private createVideoRandom() {
     this.homeservice.createVideo();
   }
 
+  addVariante() {
+    this.homeservice.addVariante();
+  }
 }

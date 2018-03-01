@@ -6,6 +6,11 @@ import { HttpClient } from '@angular/common/http';
 export class HomeService {
   constructor(public http: HttpClient) {}
   createVideo() {
-      console.log(this.http.get('/api/video'));
+    this.http.get('http://localhost:4300/api/video').subscribe(data => {
+      return null;
+    });
+  }
+  addVariante() {
+    this.http.get('/api/video');
   }
 }
