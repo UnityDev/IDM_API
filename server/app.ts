@@ -15,7 +15,7 @@ app.use(urlencoded({ extended: true }));
 
 // api routes
 app.use("/api/video", userRouter);
-
+app.use(express.static(path.join(__dirname, "ressources/")));
 app.route("/api/video").get((req, res) => {
   res.send(200);
 });
