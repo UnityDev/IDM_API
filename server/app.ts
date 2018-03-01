@@ -9,7 +9,6 @@ import { userRouter } from "./routes/video";
 const app: express.Application = express();
 
 app.disable("x-powered-by");
-s
 app.use(json());
 app.use(compression());
 app.use(urlencoded({ extended: true }));
