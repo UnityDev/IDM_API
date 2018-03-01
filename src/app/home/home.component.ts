@@ -9,6 +9,10 @@ import {HomeService} from './home.service';
 export class HomeComponent implements OnInit {
   constructor(private homeservice: HomeService) { }
 
+  mandatory: any;
+  optionnal: any;
+  alternatives: any;
+
   ngOnInit() {
     this.createVideoRandom();
   }
@@ -18,6 +22,6 @@ export class HomeComponent implements OnInit {
   }
 
   addVariante() {
-    this.homeservice.addVariante();
+    this.homeservice.addVariante(this.mandatory, this.optionnal, this.alternatives);
   }
 }

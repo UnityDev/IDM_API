@@ -1,8 +1,8 @@
 <!--Carousel Wrapper-->
 <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
   <mdb-slide>
-    <video class="video-fluid" autoplay loop muted>
-      <source src="ressources/videosCreated/videoRandom.mp4" type="video/mp4" />
+    <video class="video-fluid" autoplay muted>
+      <source src="http://localhost:4300/videosCreated/videoRandom.mp4" type="video/mp4" />
     </video>
   </mdb-slide>
 </mdb-carousel>
@@ -36,22 +36,22 @@
           <p class="color-label">Vidéo obligatoire:</p>
           <div class="form-check form-check-inline">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" disabled checked value="option1"> Flute MAN
+              <input [(ngModel)]="mandatory" name="flute" class="form-check-input" type="checkbox" disabled checked value="flute"> Flute MAN
             </label>
           </div>
         </div>
         <div class="form-group">
           <label class="color-label" for="exampleFormControlSelect1">Vidéos alternatives:</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Cool 3D World</option>
-            <option>Guinea Pig</option>
+          <select  [(ngModel)]="alternatives" name="alternatives" class="form-control" id="exampleFormControlSelect1">
+            <option value="fonte">Cool 3D World</option>
+            <option value="guinea_pig">Guinea Pig</option>
           </select>
         </div>
         <div class="form-group">
           <p class="color-label">Vidéos optionnels:</p>
           <div class="form-check form-check-inline">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Live Peace
+              <input [(ngModel)]="optionnal" name="optionnal" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="nice_peace"> Live Peace
             </label>
           </div>
         </div>
