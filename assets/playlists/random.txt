@@ -1,2 +1,0 @@
-file 'A:\Antoine\Dossier de travail\MIAGE\API_IDM\IDM_API\videoGen\videos\flute.mp4' 
-file 'A:\Antoine\Dossier de travail\MIAGE\API_IDM\IDM_API\videoGen\videos\guinea_pig.mp4' 
