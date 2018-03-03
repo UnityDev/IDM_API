@@ -9,11 +9,12 @@ import {HomeService} from './home.service';
 export class HomeComponent implements OnInit {
   constructor(private homeservice: HomeService) { }
 
-  mandatory: any;
+  mandatory: any = 'flute';
   optionnal: any;
   alternatives: any;
 
   ngOnInit() {
+    this.alternatives = 'fonte';
     this.createVideoRandom();
   }
 
