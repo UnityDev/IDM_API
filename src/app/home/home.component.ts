@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
     this.homeservice.createVideo();
   }
 
-  addVariante(event: any) {
+  addVariante() {
     this.homeservice.addVariante(this.mandatory, this.optionnal, this.alternatives);
     setTimeout(() => this.videoDisplayed = 'http://localhost:4300/videosCreated/videoCreate.mp4', 2000);
     setTimeout(() =>this.videoplayer.nativeElement.load(), 2000);

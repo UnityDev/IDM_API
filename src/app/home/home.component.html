@@ -40,7 +40,7 @@
         </div>
         <div class="form-group">
           <label class="color-label" for="exampleFormControlSelect1">Vidéos alternatives:</label>
-          <select [(ngModel)]="alternatives" (ngModelChange)="updateThumbnail($event)" name="alternatives" class="form-control" id="exampleFormControlSelect1">
+          <select [(ngModel)]="alternatives" (change)="updateThumbnail()" name="alternatives" class="form-control" id="exampleFormControlSelect1">
             <option value="fonte">Cool 3D World</option>
             <option value="guinea_pig">Guinea Pig</option>
           </select>
@@ -55,7 +55,7 @@
           </div>
           <img class="thumbnails" src="http://localhost:4300/thumbnails/optional-thumbnailv2.jpg"/>
         </div>
-        <button (click)="addVariante()"class="btn btn-deep-orange center-block btn-submit">Ajouter cette variante</button>
+        <button (click)="addVariante()" class="btn btn-deep-orange center-block btn-submit">Ajouter cette variante</button>
       </div>
     </form>
   </div>
