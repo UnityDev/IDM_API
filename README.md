@@ -15,6 +15,7 @@ cd IDM_API
 
 # Install dependencies
 npm install font-awesome
+npm install chart.js
 npm install mdbootstrap
 npm install
 
